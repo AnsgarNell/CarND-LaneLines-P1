@@ -4,7 +4,7 @@
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 7 steps. First, I made a selection based on color in order to filter and retain only yellow or white colored pixels. This was done using HLS color codification as read in other projects found in Internet, because of its excellent results. 
+My pipeline consisted of 7 steps. First, I made a selection based on color in order to filter and retain only yellow or white colored pixels. This was done using HLS color codification as read in other projects found in Internet (https://github.com/naokishibuya/car-finding-lane-lines), because of its excellent results. 
 
 Then I converted the images to grayscale and smoothed the result using Gaussian blur function. After doing that I found the edges on the resulting image using the Canny edge detection function. Then I masked the image in order to retain only a zone of interest, which basically consists in a trapezoid there where we expect lane lines will be, in the bottom of the image.
 
